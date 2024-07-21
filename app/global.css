@@ -20,6 +20,10 @@ form input {
   border-bottom: 1px solid black;
 }
 
+form textarea {
+  border: 1px solid black;
+}
+
 form .submit {
   margin-top: 20px;
 }
@@ -120,6 +124,9 @@ form .submit {
   padding: 20px;
   color: white;
   margin-bottom: 15px;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 2;
 }
 
 .alert.success {

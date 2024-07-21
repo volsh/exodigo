@@ -69,6 +69,7 @@ export default function AddCocktailForm({
         {alert && (
           <div className="alert success">
             <span className="close-button" onClick={() => setAlert("")}></span>
+            {alert}
           </div>
         )}
         <div className="modal-content">
@@ -80,11 +81,16 @@ export default function AddCocktailForm({
             <input type="text" name="strDrinkThumb" />
             <label>Main image:</label>
             <input type="text" name="strImageSource" />
+            <label>Instructions:</label>
+            <textarea name="strInstructions"></textarea>
             <button className="submit" type="submit" disabled={isLoading}>
               {isLoading ? "Loading..." : "Submit"}
             </button>
           </form>
-          <span className="close-button" onClick={() => setOpened(false)}></span>
+          <span
+            className="close-button"
+            onClick={() => setOpened(false)}
+          ></span>
         </div>
       </dialog>
     </div>
