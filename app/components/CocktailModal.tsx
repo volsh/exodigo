@@ -94,6 +94,7 @@ export default function CocktailModal({
                 />
               </div>
               <div className="modal-text">
+                <h2>{cocktail.strDrink}</h2>
                 {cocktail.strInstructions && (
                   <div>{cocktail.strInstructions}</div>
                 )}
